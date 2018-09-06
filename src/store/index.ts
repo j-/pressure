@@ -19,6 +19,14 @@ export const getForce = (state: ReducerState) => (
 	state.force
 );
 
+export const getForceAtForceMouseDown = (state: ReducerState) => (
+	state.forceAtForceMouseDown
+);
+
+export const getForceAtMouseDown = (state: ReducerState) => (
+	state.forceAtMouseDown
+);
+
 const reducer: Reducer<ReducerState> = (state = DEFAULT_STATE, action) => {
 	if (isActionForceChanged(action)) {
 		return {
