@@ -1,17 +1,17 @@
 import * as React from 'react';
-import Force from '../containers/Force';
+import ForceCurrent from '../containers/ForceCurrent';
+import ForceMax from '../containers/ForceMax';
 import ForceAtMouseDown from '../containers/ForceAtMouseDown';
 import ForceAtForceMouseDown from '../containers/ForceAtForceMouseDown';
-import MaxForce from '../containers/MaxForce';
 
 const App: React.StatelessComponent = () => (
 	<div className="App">
 		<dl>
 			<dt>Force (current)</dt>
-			<dd><Force /></dd>
+			<dd><ForceCurrent /></dd>
 
 			<dt>Force (max)</dt>
-			<dd><MaxForce /></dd>
+			<dd><ForceMax /></dd>
 
 			<dt>Force at mouse down</dt>
 			<dd><ForceAtMouseDown /></dd>
