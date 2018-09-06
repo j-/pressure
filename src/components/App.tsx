@@ -6,10 +6,19 @@ import MaxForce from '../containers/MaxForce';
 
 const App: React.StatelessComponent = () => (
 	<div className="App">
-		<p>Force (current): <Force /></p>
-		<p>Force (max): <MaxForce /></p>
-		<p>Force at mouse down: <ForceAtMouseDown /></p>
-		<p>Force at force mouse down: <ForceAtForceMouseDown /></p>
+		<dl>
+			<dt>Force (current)</dt>
+			<dd><Force /></dd>
+
+			<dt>Force (max)</dt>
+			<dd><MaxForce /></dd>
+
+			<dt>Force at mouse down</dt>
+			<dd><ForceAtMouseDown /></dd>
+
+			<dt>Force at force mouse down</dt>
+			<dd><ForceAtForceMouseDown /></dd>
+		</dl>
 	</div>
 );
 
