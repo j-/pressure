@@ -21,7 +21,7 @@ type RequiredActions = (
 export const mount = (dispatch: Dispatch<RequiredActions>) => {
 	const forceChangedSubscription = forceChangedEvents.subscribe((e) => {
 		dispatch(
-			forceChanged(e['webkitForce'])
+			forceChanged(e.webkitForce || 0)
 		);
 	});
 
