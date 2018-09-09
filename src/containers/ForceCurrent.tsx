@@ -1,5 +1,5 @@
 import { connect, MapStateToProps } from 'react-redux';
-import OutputNumeric from '../components/OutputNumeric';
+import JSONPrimitive from '../components/JSONPrimitive';
 import { ReducerState, getForce } from '../store';
 
 interface StateProps {
@@ -12,4 +12,4 @@ const mapStateToProps: MapStateToProps<StateProps, void, ReducerState> = (state)
 
 export default connect(
 	mapStateToProps,
-)(OutputNumeric);
+)(JSONPrimitive);

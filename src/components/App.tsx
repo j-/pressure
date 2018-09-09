@@ -6,6 +6,7 @@ import ForceAtForceMouseDown from '../containers/ForceAtForceMouseDown';
 
 const App: React.StatelessComponent = () => (
 	<div className="App">
+		<h1>Pressure</h1>
 		<dl>
 			<dt>Force (current)</dt>
 			<dd><ForceCurrent /></dd>
