@@ -17,3 +17,28 @@ export const forceChanged = (force: number): ActionForceChanged => ({
 		force,
 	},
 });
+
+export interface ActionMousedownChanged extends Action {
+	type: 'MouseDownChanged',
+	data: {
+		mousedown: boolean;
+	};
+}
+
+export const isActionMousedownChanged = (action: Action): action is ActionMousedownChanged => (
+	action.type === 'MousedownChanged'
+);
+
+export const mousedown = (): ActionMousedownChanged => ({
+	type: 'MouseDownChanged',
+	data: {
+		mousedown: true,
+	},
+});
+
+export const mouseup = (): ActionMousedownChanged => ({
+	type: 'MouseDownChanged',
+	data: {
+		mousedown: false,
+	},
+});
